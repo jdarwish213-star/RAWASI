@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme{
+  --font-cairo: "Cairo", sans-serif;
+  --color-night: #141716;      /* خلفية داكنة، عمق الجبال ليلاً */
+  --color-night-2: #1b1f1d;    /* أسطح البطاقات */
+  --color-gold: #d8b77e;       /* ذهبي، الفخامة والدفء الخليجي */
+  --color-gold-light: #e5c99a; /* hover والعناوين */
+  --color-sand: #f3eee6;      /* نص رئيسي، لون الرمال */
+    --animate-slow-zoom: slowZoom 20s ease-out forwards;
+
+  @keyframes slowZoom {
+    from { transform: scale(1); }
+    to   { transform: scale(1.1); }
+  }
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-cairo);
+  background: var(--color-night);
+  color: var(--color-sand);
+}
