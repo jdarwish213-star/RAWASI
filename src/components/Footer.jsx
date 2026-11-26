@@ -7,7 +7,7 @@ import { FiPhone, FiMail, FiMapPin, FiArrowUp } from "react-icons/fi";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
-/* ⚠️ عدّلي هذه البيانات ببيانات الشركة الحقيقية */
+
 const CONTACT = {
   phone: "+971 00 000 0000",
   phoneHref: "tel:+971000000000",
