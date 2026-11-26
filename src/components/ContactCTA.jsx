@@ -7,7 +7,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
-/* ⚠️ نفس بيانات الفوتر. الأفضل نقلها لملف مشترك: src/data/contact.js */
+
 const CONTACT = {
   phone: "+971 00 000 0000",
   phoneHref: "tel:+971000000000",
@@ -40,7 +40,7 @@ function validate(v) {
   return e;
 }
 
-/* ⚠️ استبدلي هذه الدالة بالإرسال الحقيقي (Formspree / EmailJS / API خاص بك) */
+
 async function sendRequest(data) {
   console.log("Contact request:", data);
   await new Promise((r) => setTimeout(r, 1200));
@@ -98,11 +98,7 @@ function ContactCTA() {
     error: touched[key] ? errors[key] : undefined,
   });
 
-  /* =====================================================
-     الفكرة: مع نزول القسم للشاشة تنفتح دائرة من الأسفل-الحد العلوي
-     (من نقطة التقاء القسم السابق) وتملأ القسم، ثم ينزل الفورم
-     من الأعلى. مربوطة بالتمرير الطبيعي فقط: بدون تثبيت ولا تطويل.
-     ===================================================== */
+ 
   useGSAP(
     () => {
       const section = sectionRef.current;
